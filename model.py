@@ -80,8 +80,6 @@ gene_expr_imputed_df.drop(columns=cols[2:5], inplace=True)
 atac_pivot_df = pd.read_table('/content/drive/My Drive/ML4FG_final/atac_pivot.tsv')
 ctm = get_ctm(atac_pivot_df)
 
-gene_expr_imputed_df.head()
-
 cell_types = list(set(gene_expr_imputed_df.cell_type))
 small_molecules = list(set(gene_expr_imputed_df.sm_name))
 name_representations = cell_types + small_molecules
